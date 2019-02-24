@@ -1,5 +1,6 @@
 .listing {
     padding: 0rem 1.5rem;
+    position: relative;
 
     .header {
         display: flex;
@@ -45,5 +46,27 @@
 
     .content {
         padding: 0 1rem;
+    }
+
+    .add-contacts-btn {
+        position: fixed;
+        bottom: 2rem;
+        right: 3rem;
+        border-radius: 50%;
+        border: none !important;
+        width: 4rem;
+        height: 4rem;
+        background: rgba(0, 0, 0, 0.85);
+        cursor: pointer;
+        outline: none !important;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+
+            * {
+                fill: #fff;
+            }
+        }
     }
 }

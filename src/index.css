@@ -35,3 +35,19 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 	monospace;
 }
+
+.avatar {
+	text-transform: capitalize;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #00ee13;
+	color: #fff;
+	display: inline-block;
+	margin-right: 0.5rem;
+	font-size: 1.25rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
