@@ -15,7 +15,13 @@ const Listing = (props) => {
 
             <div className="content">
                 {
-                    props.contacts.map((contact, i) => <ContactRow {...contact} key={i} />)
+                    props.contacts
+                        .sort((a, b) => {
+                            if(a.name < b.name) { return -1; }
+                            if(a.name > b.name) { return 1; }
+                            return 0;
+                        })
+                        .map((contact, i) => <ContactRow {...contact} key={i} />)
                 }
             </div>
         </div>

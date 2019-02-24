@@ -8,6 +8,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 14px;
 	background: #f1eff4;
+	font-family: 'Raleway', sans-serif;
 }
 @media(max-width: 767px) {
 	body {

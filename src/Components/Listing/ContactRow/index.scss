@@ -22,6 +22,26 @@
         font-size: 0.9rem;
         font-weight: 400;
         padding: 0 1rem 0 0;
+        font-family: 'Poppins', sans-serif;
+
+        .avatar {
+            text-transform: capitalize;
+            width: 2rem;
+            height: 2rem;
+            // padding: 0.1rem 0.6rem;
+            text-align: center;
+            // vertical-align: middle;
+            // border: 1px solid #00ee13;
+            border-radius: 50%;
+            background: #00ee13;
+            color: #fff;
+            display: inline-block;
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
+        }
+    }
+    p.name {
+        text-transform: capitalize;
     }
     p.email {
         width: 46%;
