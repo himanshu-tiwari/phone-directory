@@ -1,0 +1,49 @@
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // .name,
+    // .email,
+    // .phone {
+    //     flex: 0.3;
+    // }
+
+    // .location {
+    //     flex: 0.3;
+    //     text-align: right;
+    // }
+
+    p {
+        width: 33%;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 0 1rem 0 0;
+    }
+    p.email {
+        width: 46%;
+    }
+    p.location {
+        width: 20%;
+    }
+
+    @media(max-width: 767px) {
+        p.location {
+            display: none;
+        }
+        p {
+            width: 33%;
+        }
+    }
+    @media(max-width: 360px) {
+        p.email {
+            display: none;
+        }
+        p {
+            width: 50%;
+        }
+    }
+}

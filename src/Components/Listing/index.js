@@ -7,13 +7,17 @@ const Listing = (props) => {
     return(
         <div className="listing">
             <div className="header">
-                <h5>Name</h5>
-                <h5>Email</h5>
-                <h5>Phone</h5>
+                <h5 className="name">Name</h5>
+                <h5 className="email">Email</h5>
+                <h5 className="phone">Phone</h5>
+                <h5 className="location">Location</h5>
             </div>
-            {
-                props.contacts.map((contact, i) => <ContactRow {...contact} key={i} />)
-            }
+
+            <div className="content">
+                {
+                    props.contacts.map((contact, i) => <ContactRow {...contact} key={i} />)
+                }
+            </div>
         </div>
     );
 };

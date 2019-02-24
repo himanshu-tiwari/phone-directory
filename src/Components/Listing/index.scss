@@ -1,0 +1,49 @@
+.listing {
+    padding: 0rem 1.5rem;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #c9c7c7;
+        padding: 0 1rem;
+
+        h5 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            margin: 1rem 0;
+            width: 33%;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h5.email {
+            width: 46%;
+        }
+        h5.location {
+            width: 21%;
+        }
+
+        @media(max-width: 767px) {
+            h5.location {
+                display: none;
+            }
+            h5 {
+                width: 33%;
+            }
+        }
+        @media(max-width: 360px) {
+            h5.email {
+                display: none;
+            }
+            h5 {
+                width: 50%;
+            }
+        }
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+}
