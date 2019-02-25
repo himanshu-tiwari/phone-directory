@@ -3997,8 +3997,13 @@ const initialState = {
 
 const contactReducer = (state = initialState, action) => {
     switch(action.type) {
+        case 'UPDATE_CONTACTS':
+            return {
+                ...state,
+                list: [ ...state.list, ...action.data ]
+            };
         default:
-        return state;
+            return state;
     }
 }
 

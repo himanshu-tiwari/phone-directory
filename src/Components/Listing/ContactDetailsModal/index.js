@@ -11,8 +11,8 @@ const ContactDetailsModal = (props) => {
     const { name, avatarColor, toggleModal, phonelist, emaillist, company, title, birthday } = props;
 
     return(
-        <div className="contact-details-modal-container">
-            <div className="contact-details-modal">
+        <div className="contact-details-modal-container modal-container">
+            <div className="contact-details-modal modal">
                 <Close className="close" onClick={toggleModal} />
                 <h3 className="modal-heading">
                     <span

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './index.scss';
 import ContactRow from './ContactRow';
-import { ReactComponent as Upload } from '../../assets/icons/upload.svg';
+import AddContacts from './AddContacts';
 
 const Listing = (props) => {
     return(
@@ -26,9 +26,7 @@ const Listing = (props) => {
                 }
             </div>
 
-            <button className="add-contacts-btn">
-                <Upload />
-            </button>
+            <AddContacts />
         </div>
     );
 };

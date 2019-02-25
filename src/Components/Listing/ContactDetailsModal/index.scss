@@ -1,41 +1,6 @@
 .contact-details-modal-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 5rem;
-    z-index: 9;
-
     .contact-details-modal {
-        background: #fff;
-        border-radius: 4px;
-        padding: 1rem 0 0.5rem 0;
-        width: 650px;
-        max-width: 95%;
-        position: relative;
-
-        .close {
-            position: absolute;
-            top: 1.5rem;
-            right: 2rem;
-            width: 1rem;
-            height: 1rem;
-            cursor: pointer;
-        }
-
         .modal-heading {
-            font-weight: 500;
-            font-family: Raleway, 'sans-serif';
-            margin: 0 0 1rem 0;
-            font-size: 1.5rem;
-            border-bottom: 1px solid #c9c7c7;
-            padding: 0.5rem 0 1.25rem 1.5rem;
-
             .avatar {
                 font-size: 1.75rem;
                 width: 2.75rem;
@@ -44,16 +9,6 @@
         }
 
         .modal-content {
-            padding: 0.2rem 0 1.25rem 1.5rem;
-
-            .heading {
-                font-size: 1.2rem;
-                font-weight: 400;
-                font-family: 'Poppins', sans-serif;
-                margin: 0 0 1rem 0;
-                color: rgba(0, 0, 0, 0.85);
-            }
-
             .phone, .email, .work, .birthday {
                 display: flex;
                 justify-content: flex-start;

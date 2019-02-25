@@ -1,0 +1,59 @@
+.contact-result-modal-container {
+    .contact-result-modal {
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-right: 1rem;
+            
+            .modal-content {
+                width: 50%;
+
+                .columns {
+                    p {
+                        text-transform: capitalize;
+
+                        svg {
+                            width: 1rem;
+                            height: 1rem;
+                            vertical-align: text-bottom;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+                .columns-2 {
+                    p {
+                        text-transform: none;
+                    }
+                }
+
+                button {
+                    font-size: 1.25rem;
+                    padding: 0.5rem 2.5rem 0.75rem 2.5rem;
+                    background: #36C626;
+                    border: none !important;
+                    color: #fff !important;
+                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 3px;
+                    vertical-align: middle;
+                    margin-top: 1.25rem;
+                    outline: none !important;
+                    cursor: pointer;
+
+                    svg {
+                        width: 1.15rem;
+                        height: 1.15rem;
+                        vertical-align: middle;
+
+                        * {
+                            fill: #fff;
+                        }
+                    }
+                }
+                button:active {
+                    box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+}
